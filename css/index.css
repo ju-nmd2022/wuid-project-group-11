@@ -1,0 +1,200 @@
+body {
+    margin: 0px;
+  }
+  
+  main {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  /*Here is header and navigationbar*/
+  
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navigationbar {
+    margin-bottom: 7vh;
+    background-color: lightgrey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60vw;
+    text-indent: 1cm;
+  }
+  
+  a {
+    color: black;
+    text-decoration: none;
+    font-family: "Inria Serif";
+    font-size: 18pt;
+    transition: font-weight 0.2s;
+  }
+  
+  a:hover {
+    font-weight: bold;
+    color: #0288d1;
+  }
+  
+  .hamburger {
+    position: relative;
+    display: block;
+    width: 45px;
+    cursor: pointer;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    z-index: 100;
+  
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+  }
+  
+  .hamburger .bar,
+  .hamburger:after,
+  .hamburger:before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+    transition: 0.4s;
+  }
+  
+  .hamburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);
+  }
+  
+  .hamburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+  }
+  
+  .hamburger.is-active .bar {
+    opacity: 0;
+  }
+  
+  .mobile-nav {
+    position: fixed;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    z-index: 98;
+    background-color: white;
+    padding-top: 120px;
+    transition: 0.4s;
+  }
+  
+  .mobile-nav.is-active {
+    right: 0;
+  }
+  
+  .mobile-nav a {
+    display: block;
+    width: 100%;
+    max-width: 200px;
+    margin: 0 auto 16px;
+    text-align: center;
+    padding: 12px 16px;
+    background-color: lightgrey;
+  
+    color: black;
+    text-decoration: none;
+    font-family: "Inria Serif";
+    font-size: 18pt;
+  }
+  
+  .mobile-nav a:hover {
+    font-weight: bold;
+    color: #0288d1;
+  }
+  
+  @media (max-width: 987px) {
+    .navigationbar {
+      display: none;
+    }
+  }
+  
+  @media (min-width: 986px) {
+    .mobile-nav {
+      display: none;
+    }
+  
+    .hamburger {
+      display: none;
+    }
+  }
+  
+  /* Here is hot right now section*/
+  
+  .trending {
+    font-family: "Inria Serif";
+    font-size: 28pt;
+    text-align: center;
+  }
+  
+  .menandwomen {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hotpic1 .hotpic2 {
+    -moz-outline-radius: 20;
+  }
+  
+  .women {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 20px;
+  }
+  .men {
+    width: 35vw;
+    height: 35vw;
+    border-radius: 20px;
+  }
+  
+  /* Here is the Shoe Section */
+  .grid-container {
+    margin: 25px 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 1px;
+  }
+  
+  .Shoe-Title {
+    font-family: "Inria Serif";
+    font-size: 16px;
+    text-align: left;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  
+  .shoe-card {
+    position: absolute;
+    width: 265px;
+    height: 338px;
+  
+    padding: 15px 15px;
+    background-color: white;
+    border-color: black;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 20px;
+    margin: 15px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+  }
+  .Text-Price {
+    margin-top: 22px;
+    margin-bottom: 21px;
+    font-weight: bold;
+    font-family: "Inria Serif";
+    font-size: 32px;
+    text-align: left;
+  }
+  

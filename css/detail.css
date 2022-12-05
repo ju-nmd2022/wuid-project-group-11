@@ -1,0 +1,57 @@
+body {
+    margin: 0px;
+  }
+  
+  main {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  
+  .logo {
+    font-size: 50pt;
+    text-align: center;
+    font-family: "Inria Serif";
+  }
+  
+  main {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  
+  .detail-shoes {
+    justify-content: center;
+    width: 70vw;
+    border-radius: 7%;
+  }
+  
+  p {
+    text-align: left;
+    width: 380px;
+  }
+  
+  .sizesImage {
+    width: 350px;
+    border-radius: 9%;
+  }
+  
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  
+  .sizesAvailable {
+    display: table-column;
+  }
+  
+  .description {
+    display: table-column;
+  }
+  
+  .button {
+    width: 300px;
+    margin: 20px;
+  }
