@@ -33,3 +33,12 @@ img {
   border-style: double;
   border-width: 1px;
 }
+.sizes {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+.size {
+  background-color: rgba(184, 184, 184, 0.622);
+}

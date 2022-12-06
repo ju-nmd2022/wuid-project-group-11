@@ -17,7 +17,7 @@ nav {
 
 .navigationbar {
   margin-bottom: 7vh;
-  background-color: lightgrey;
+  background-color: white;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -101,7 +101,7 @@ a:hover {
   margin: 0 auto 16px;
   text-align: center;
   padding: 12px 16px;
-  background-color: lightgrey;
+  background-color: white;
 
   color: black;
   text-decoration: none;
@@ -136,25 +136,113 @@ a:hover {
   font-family: "Inria Serif";
   font-size: 28pt;
   text-align: center;
+  text-shadow: 0.05em 0 0 rgba(208, 148, 122, 0.75),
+    -0.25em -0.15em 0 rgba(81, 144, 133, 0.75),
+    0.25em 0.05em 0 rgba(79, 96, 104, 0.75);
+
+  animation: trendingGlitch 1500ms infinite;
+}
+
+@keyframes trendingGlitch {
+  0% {
+    text-shadow: 0.1em 0 0 rgba(208, 148, 122, 0.75),
+      -0.05em -0.1em 0 rgba(81, 144, 133, 0.75),
+      -0.05em 0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  14% {
+    text-shadow: 0.1em 0 0 rgba(208, 148, 122, 0.75),
+      -0.05em -0.1em 0 rgba(81, 144, 133, 0.75),
+      -0.05em 0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  15% {
+    text-shadow: -0.1em -0.05em 0 rgba(208, 148, 122, 0.75),
+      0.05em 0.05em 0 rgba(81, 144, 133, 0.75),
+      -0.1em -0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  49% {
+    text-shadow: -0.1em -0.05em 0 rgba(208, 148, 122, 0.75),
+      0.05em 0.05em 0 rgba(81, 144, 133, 0.75),
+      -0.1em -0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  50% {
+    text-shadow: 0.05em 0.1em 0 rgba(208, 148, 122, 0.75),
+      0.1em 0em 0 rgba(81, 144, 133, 0.75), 0 -0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  99% {
+    text-shadow: 0.05em 0.1em 0 rgba(208, 148, 122, 0.75),
+      0.1em 0em 0 rgba(81, 144, 133, 0.75), 0 -0.1em 0 rgba(79, 96, 104, 0.75);
+  }
+  100% {
+    text-shadow: -0.05em 0.1em 0 rgba(208, 148, 122, 0.75),
+      0.1em 0 0 rgba(81, 144, 133, 0.75), 0 -0.1em 0 rgba(79, 96, 104, 0.75);
+  }
 }
 
 .menandwomen {
   display: flex;
   justify-content: space-evenly;
 }
-.hotpic1 .hotpic2 {
+.hotpic1 {
   -moz-outline-radius: 20;
+  background: url(/media/women.jpeg);
+  animation: slideWoman 10s infinite;
+  width: 35vw;
+  height: 35vh;
+  border-radius: 20px;
+}
+.hotpic2 {
+  -moz-outline-radius: 20;
+  background: url(/media/men.jpeg);
+  animation: slideMan 10s infinite;
+  width: 35vw;
+  height: 35vh;
+  border-radius: 20px;
 }
 
-.women {
+.woman {
   width: 35vw;
-  height: 35vw;
+  height: 35vh;
   border-radius: 20px;
+  animation: slideWoman 10s infinite;
+  animation-iteration-count: infinite;
 }
-.men {
+
+.man {
   width: 35vw;
-  height: 35vw;
+  height: 35vh;
   border-radius: 20px;
+  animation: slideMan 10s infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes slideWoman {
+  0% {
+    background: url(/media/woman.jpeg);
+    background-size: calc(50vh 35vw);
+  }
+  50% {
+    background: url(/media/woman2.jpeg);
+    background-size: calc(50vh 35vw);
+  }
+  100% {
+    background-image: url(/media/woman3.jpeg);
+    background-size: calc(50vh 35vw);
+  }
+}
+
+@keyframes slideMan {
+  0% {
+    background-image: url(/media/man.jpeg);
+    background-size: calc(50vh 35vw);
+  }
+  50% {
+    background-image: url(/media/man2.jpeg);
+    background-size: calc(50vh 35vw);
+  }
+  100% {
+    background-image: url(/media/man3.jpeg);
+    background-size: calc(50vh 35vw);
+  }
 }
 
 /* Here is the Shoe Section */
