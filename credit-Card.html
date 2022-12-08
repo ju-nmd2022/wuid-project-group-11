@@ -7,6 +7,8 @@
     <title>Credit Card Example</title>
     <link rel="stylesheet" href="css/Credit-Card.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/querry.css" />
+    <script src="js/credit-card.js" defer></script>
   </head>
 
   <body>
@@ -16,53 +18,55 @@
 
     <main>
       <h2>Delivery options</h2>
-      <img src="./media/deliveryOptions.png" />
+      <img class="delivery" src="./media/deliveryOptions.png" />
       <h2>Customer information</h2>
 
       <div class="CustomerInfo">
         <form action="">
-          <div class="Name-and-Surname">
+          <div class="customer-grid">
             <div class="inputBox">
               <input
                 type="text"
                 maxlenght="16"
-                class="First-Name-input"
+                class="big-box"
                 placeholder="First Name"
               />
             </div>
+
             <div class="inputBox">
               <input
                 type="text"
                 maxlenght="16"
-                class="Surname-input"
+                class="big-box"
                 placeholder="Surname"
               />
             </div>
-          </div>
 
-          <div class="inputBox">
-            <input
-              type="text"
-              maxlenght="16"
-              class="Adress-input"
-              placeholder="Address"
-            />
-          </div>
-
-          <div class="Email-Phone">
             <div class="inputBox">
               <input
                 type="text"
                 maxlenght="16"
-                class="Email-input"
+                class="big-box"
+                placeholder="Address"
+              />
+            </div>
+
+            <div class="empty"></div>
+
+            <div class="inputBox">
+              <input
+                type="text"
+                maxlenght="16"
+                class="big-box"
                 placeholder="Email: xxxx@xxx.com"
               />
             </div>
+
             <div class="inputBox">
               <input
                 type="text"
                 maxlenght="16"
-                class="Phone-input"
+                class="big-box"
                 placeholder="Phone number"
               />
             </div>
@@ -78,7 +82,7 @@
             <input
               type="text"
               maxlenght="16"
-              class="card-number-input"
+              class="big-box"
               placeholder="Name Card Holder"
             />
           </div>
@@ -86,7 +90,7 @@
             <input
               type="text"
               maxlenght="16"
-              class="card-holder-input"
+              class="big-box"
               placeholder="Card Number xxxx-xxxx-xxxx-xxxx"
             />
           </div>
@@ -95,7 +99,7 @@
               <input
                 type="text"
                 maxlenght="16"
-                class="Date-input"
+                class="small-box"
                 placeholder="MM/YY"
               />
             </div>
@@ -104,23 +108,22 @@
               <input
                 type="text"
                 maxlenght="16"
-                class="cvv-input"
+                class="small-box"
                 placeholder="cvv"
               />
             </div>
           </div>
-
-          <a href="#" style="font-family: 'Inria Serif'">DONE</a>
+          <div class="space"></div>
+          <a href="#" style="font-family: 'Inria Serif'" class="done">DONE</a>
         </form>
       </div>
-      <div class="space"></div>
+      <div class="space-2"></div>
     </main>
-
     <footer>
       <div class="parent">
         <div class="div1"><p>Gift card</p></div>
-        <div class="div2"><p>Find a store</p></div>
-        <div class="div3"><p>Student discount</p></div>
+        <div class="div2"><p>stores</p></div>
+        <div class="div3"><p>discounts</p></div>
         <div class="div4"><p>Get help</p></div>
         <div class="div5"><p>Contact</p></div>
       </div>

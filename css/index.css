@@ -182,66 +182,81 @@ a:hover {
   display: flex;
   justify-content: space-evenly;
 }
+.menandwomen img {
+  object-fit: cover;
+}
 .hotpic1 {
   -moz-outline-radius: 20;
   background: url(/media/women.jpeg);
   animation: slideWoman 10s infinite;
   width: 35vw;
-  height: 35vh;
+  height: 65vh;
+  object-fit: cover;
   border-radius: 20px;
 }
 .hotpic2 {
   -moz-outline-radius: 20;
   background: url(/media/men.jpeg);
   animation: slideMan 10s infinite;
+  height: 65vh;
   width: 35vw;
-  height: 35vh;
+  object-fit: cover;
   border-radius: 20px;
 }
 
 .woman {
   width: 35vw;
-  height: 35vh;
   border-radius: 20px;
-  animation: slideWoman 10s infinite;
-  animation-iteration-count: infinite;
+  animation: slideWoman 1s infinite;
+  object-fit: cover;
 }
 
 .man {
   width: 35vw;
-  height: 35vh;
   border-radius: 20px;
   animation: slideMan 10s infinite;
-  animation-iteration-count: infinite;
+  object-fit: cover;
 }
 
 @keyframes slideWoman {
   0% {
-    background: url(/media/woman.jpeg);
+    background-image: url(/media/women.jpeg);
     background-size: calc(50vh 35vw);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   50% {
-    background: url(/media/woman2.jpeg);
+    background-image: url(/media/woman2.jpeg);
     background-size: calc(50vh 35vw);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   100% {
     background-image: url(/media/woman3.jpeg);
     background-size: calc(50vh 35vw);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
 }
 
 @keyframes slideMan {
   0% {
-    background-image: url(/media/man.jpeg);
+    background-image: url(/media/men.jpeg);
     background-size: calc(50vh 35vw);
+    background-size: cover;
+    background-repeat: no-repeat;
   }
   50% {
     background-image: url(/media/man2.jpeg);
     background-size: calc(50vh 35vw);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
   100% {
     background-image: url(/media/man3.jpeg);
     background-size: calc(50vh 35vw);
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 

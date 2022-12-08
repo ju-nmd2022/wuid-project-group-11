@@ -18,6 +18,9 @@
   .texttt {
     font-size: 2.5vw;
   }
+  .customer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -37,6 +40,9 @@
   }
   .texttt {
     font-size: 2.5vw;
+  }
+  .customer-grid {
+    grid-template-columns: 1fr 1fr;
   }
 }
 
@@ -59,6 +65,9 @@
   .texttt {
     font-size: 2.5vw;
   }
+  .customer-grid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -79,5 +88,41 @@
   }
   .texttt {
     font-size: 4.5vw;
+  }
+  .customer-grid {
+    grid-template-columns: 1fr;
+  }
+  form {
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .Name-and-Surname {
+    display: block;
+    box-sizing: border-box;
+  }
+  .Email-Phone {
+    display: block;
+    box-sizing: border-box;
+  }
+  .Date-and-CVV {
+    display: block;
+    box-sizing: border-box;
+  }
+  .big-box {
+    height: 54px;
+    border-radius: 10px;
+    width: 320px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .small-box {
+    height: 54px;
+    border-radius: 10px;
+    width: 160px;
+    margin-top: 22px;
+    margin-bottom: 22px;
+  }
+  .done {
+    margin-left: 50px;
   }
 }

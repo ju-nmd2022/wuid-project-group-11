@@ -3,8 +3,8 @@ body {
 }
 
 main {
-  margin-left: 40px;
-  margin-right: 40px;
+  /* margin-left: 40px;
+  margin-right: 40px; */
 }
 .choosed {
   padding-top: 1.5vw;
@@ -40,39 +40,27 @@ img {
   background-color: rgba(184, 184, 184, 0.622);
   font-size: 2.5vw;
 }
-
-/* @media only screen and (min-width: 1280px) {
-  .sizes {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .texttt {
-    font-size: 2.5vw;
-  }
+.size-1 {
+  position: relative;
 }
-
-@media only screen and (max-width: 1280px) {
-  .sizes {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .texttt {
-    font-size: 2.5vw;
-  }
+.size-2 {
+  position: relative;
 }
-
-@media only screen and (max-width: 950px) {
-  .sizes {
-    grid-template-columns: repeat(8, 1fr);
-  }
-  .texttt {
-    font-size: 2.5vw;
-  }
+.size-3 {
+  position: relative;
 }
-
-@media only screen and (max-width: 640px) {
-  .sizes {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .texttt {
-    font-size: 4.5vw;
-  }
-} */
+.size-4 {
+  position: relative;
+}
+.size-5 {
+  position: relative;
+}
+.size-6 {
+  position: relative;
+}
+.size-7 {
+  position: relative;
+}
+.size-8 {
+  position: relative;
+}

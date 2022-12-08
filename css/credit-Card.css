@@ -1,11 +1,10 @@
 main {
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 body {
   margin: 0px;
-  align-items: center;
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -19,9 +18,8 @@ body {
   font-family: "Inria Serif";
 }
 
-img {
-  width: 906px;
-  height: 87px;
+.delivery {
+  width: 100%;
 }
 
 h2 {
@@ -29,79 +27,27 @@ h2 {
   font-family: "Inria Serif";
 }
 
-.Name-and-Surname {
-  display: flex;
-  justify-content: space-between;
-}
-.Email-Phone {
-  display: flex;
-  justify-content: space-between;
-}
-.Date-and-CVV {
-  display: flex;
-  gap: 100px;
+.customer-grid {
+  display: grid;
+  justify-content: space-evenly;
 }
 
-.First-Name-input {
+.Date-and-CVV {
+  display: flex;
+  gap: 30px;
+}
+
+.big-box {
   height: 54px;
   border-radius: 10px;
-  width: 430px;
+  width: 420px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
-.Surname-input {
+.small-box {
   height: 54px;
   border-radius: 10px;
-  width: 430px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.Adress-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 430px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.Email-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 430px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.Phone-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 430px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.card-number-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 471px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.card-holder-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 471px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.Date-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 182px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.cvv-input {
-  height: 54px;
-  border-radius: 10px;
-  width: 182px;
+  width: 190px;
   margin-top: 22px;
   margin-bottom: 22px;
 }
@@ -131,29 +77,14 @@ a {
   margin: 20px;
 }
 
-@media screen and (max-width: 600px) {
-  body {
-    padding: 20px;
-  }
-  form {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  .Name-and-Surname {
-    display: block;
-    box-sizing: border-box;
-  }
-  .Email-Phone {
-    display: block;
-    box-sizing: border-box;
-  }
-  .Date-and-CVV {
-    display: block;
-    box-sizing: border-box;
-  }
-}
-
 .space {
   width: 100%;
   height: 30px;
+}
+.space-2 {
+  width: 100%;
+  height: 50px;
+}
+.done {
+  margin-left: 80px;
 }

@@ -55,3 +55,35 @@ div {
   width: 260px;
   margin: 20px;
 }
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 1280px) {
+  .container {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (min-width: 640px) (max-width: 950px) {
+  .container {
+    width: 60%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .container {
+    width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+  }
+}
