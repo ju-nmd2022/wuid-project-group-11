@@ -12,6 +12,12 @@
     height: 2%;
     margin: 20px 0% 1% 60%;
   }
+  .sizes {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .texttt {
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 1280px) {
@@ -25,6 +31,12 @@
     width: 20%;
     height: 2%;
     margin: 20px 0% 1% 60%;
+  }
+  .sizes {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .texttt {
+    font-size: 2.5vw;
   }
 }
 
@@ -41,6 +53,12 @@
     height: 4%;
     margin: 20px 0% 1% 60%;
   }
+  .sizes {
+    grid-template-columns: repeat(8, 1fr);
+  }
+  .texttt {
+    font-size: 2.5vw;
+  }
 }
 
 @media only screen and (max-width: 640px) {
@@ -55,5 +73,11 @@
     width: 40%;
     height: 4%;
     margin: 20px 0% 1% 60%;
+  }
+  .sizes {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .texttt {
+    font-size: 4.5vw;
   }
 }
