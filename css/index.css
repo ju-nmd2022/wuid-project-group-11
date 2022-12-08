@@ -187,7 +187,7 @@ a:hover {
 }
 .hotpic1 {
   -moz-outline-radius: 20;
-  background: url(/media/women.jpeg);
+  background: url(media/women.jpeg);
   animation: slideWoman 10s infinite;
   width: 35vw;
   height: 65vh;
@@ -196,7 +196,7 @@ a:hover {
 }
 .hotpic2 {
   -moz-outline-radius: 20;
-  background: url(/media/men.jpeg);
+  background: url(media/men.jpeg);
   animation: slideMan 10s infinite;
   height: 65vh;
   width: 35vw;
@@ -220,19 +220,19 @@ a:hover {
 
 @keyframes slideWoman {
   0% {
-    background-image: url(/media/women.jpeg);
+    background-image: url(media/women.jpeg);
     background-size: calc(50vh 35vw);
     background-size: cover;
     background-repeat: no-repeat;
   }
   50% {
-    background-image: url(/media/woman2.jpeg);
+    background-image: url(media/woman2.jpeg);
     background-size: calc(50vh 35vw);
     background-size: cover;
     background-repeat: no-repeat;
   }
   100% {
-    background-image: url(/media/woman3.jpeg);
+    background-image: url(media/woman3.jpeg);
     background-size: calc(50vh 35vw);
     background-size: cover;
     background-repeat: no-repeat;
@@ -241,19 +241,19 @@ a:hover {
 
 @keyframes slideMan {
   0% {
-    background-image: url(/media/men.jpeg);
+    background-image: url(media/men.jpeg);
     background-size: calc(50vh 35vw);
     background-size: cover;
     background-repeat: no-repeat;
   }
   50% {
-    background-image: url(/media/man2.jpeg);
+    background-image: url(media/man2.jpeg);
     background-size: calc(50vh 35vw);
     background-repeat: no-repeat;
     background-size: cover;
   }
   100% {
-    background-image: url(/media/man3.jpeg);
+    background-image: url(media/man3.jpeg);
     background-size: calc(50vh 35vw);
     background-repeat: no-repeat;
     background-size: cover;
