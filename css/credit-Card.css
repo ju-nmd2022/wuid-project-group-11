@@ -37,21 +37,6 @@ h2 {
   gap: 30px;
 }
 
-.big-box {
-  height: 54px;
-  border-radius: 10px;
-  width: 420px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-.small-box {
-  height: 54px;
-  border-radius: 10px;
-  width: 190px;
-  margin-top: 22px;
-  margin-bottom: 22px;
-}
-
 textarea:focus,
 input:focus {
   font-family: "Inria Serif";

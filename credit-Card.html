@@ -8,7 +8,6 @@
     <link rel="stylesheet" href="css/Credit-Card.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/querry.css" />
-    <script src="js/credit-card.js" defer></script>
   </head>
 
   <body>
@@ -114,7 +113,13 @@
             </div>
           </div>
           <div class="space"></div>
-          <a href="#" style="font-family: 'Inria Serif'" class="done">DONE</a>
+          <a
+            href="#"
+            style="font-family: 'Inria Serif'"
+            class="done"
+            onclick="myFunction()"
+            >DONE</a
+          >
         </form>
       </div>
       <div class="space-2"></div>
@@ -128,5 +133,17 @@
         <div class="div5"><p>Contact</p></div>
       </div>
     </footer>
+    <script>
+      function myFunction() {
+        if (
+          confirm(
+            "Your purchase was succesful, you'll recieve an email with the detail of your order #251916"
+          )
+        ) {
+          location.href = "index.html";
+        } else {
+        }
+      }
+    </script>
   </body>
 </html>
