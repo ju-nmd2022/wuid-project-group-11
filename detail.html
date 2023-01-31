@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/detail.css" />
     <link rel="stylesheet" href="css/global.css" />
+    <script src="js/detail.js" defer></script>
     <title>Air Jordan 1, varsity red</title>
   </head>
   <body>
@@ -13,6 +14,15 @@
       <h1 class="logo">ZATÉ</h1>
     </header>
     <main>
+      <div id="extraShoppingCart">
+        <button id="close">&times;</button>
+        <h1 id="messageInCart">You added this to your shoppingcart!</h1>
+        <img
+          class="extraShoppingCartShoe"
+          src="./media/detailpage.png"
+          alt=""
+        />
+      </div>
       <img class="detail-shoes" src="./media/detailpage.png" alt="" />
       <div class="container">
         <div class="description">
@@ -30,8 +40,14 @@
           <img class="sizesImage" src="./media/sizes.png" alt="" />
         </div>
       </div>
-      <a href="shoppingCart.html">
-        <img class="button" src="./media/shoppingcartButton.png" alt="" />
+      <a>
+        href="shoppingCart.html"
+        <img
+          id="button"
+          class="button"
+          src="./media/shoppingcartButton.png"
+          alt=""
+        />
       </a>
     </main>
     <footer>
