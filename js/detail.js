@@ -1,7 +1,4 @@
 const shoppingCart = document.getElementById("extraShoppingCart");
-const shoppingCartShoe = document.getElementById("shoppingcartShoe");
-const messageInCart = document.getElementById("messageInCart");
-const button = document.getElementById("button");
 const close = document.getElementById("close");
 
 shoppingCart.style.display = "none";
