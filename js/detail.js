@@ -1,12 +1,13 @@
 const shoppingCart = document.getElementById("extraShoppingCart");
-const close = document.getElementById("close");
+const addToShoppingCartButton = document.getElementById("button");
+const closeButton = document.getElementById("close");
 
 shoppingCart.style.display = "none";
 
-button.addEventListener("click", function () {
+addToShoppingCartButton.onclick = function () {
   shoppingCart.style.display = "flex";
-});
+};
 
-close.onclick = function () {
+closeButton.onclick = function () {
   shoppingCart.style.display = "none";
 };
