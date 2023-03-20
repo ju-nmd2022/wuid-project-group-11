@@ -12,7 +12,9 @@ main {
   text-align: center;
   font-family: "Inria Serif";
 }
-
+.basket {
+  width: 8%;
+}
 main {
   align-items: center;
   justify-content: center;

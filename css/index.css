@@ -8,6 +8,13 @@ main {
 }
 /*Here is header and navigationbar*/
 
+.toplogos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
 nav {
   display: flex;
   flex-direction: column;
@@ -23,6 +30,31 @@ nav {
   align-items: center;
   width: 60vw;
   text-indent: 1cm;
+}
+
+.basketKirekhar {
+  width: 60px;
+  position: relative;
+}
+
+.basketbadge {
+  display: none;
+  background-color: rgb(115, 105, 105);
+  font-weight: 700;
+  color: aliceblue;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  padding-left: 12px;
+  padding-top: 6px;
+  box-sizing: border-box;
+  position: absolute;
+  top: 45px;
+  right: 0;
+}
+
+.basket {
+  width: 100%;
 }
 
 a {

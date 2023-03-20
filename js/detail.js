@@ -5,7 +5,8 @@ const closeButton = document.getElementById("close");
 shoppingCart.style.display = "none";
 
 addToShoppingCartButton.onclick = function () {
-  shoppingCart.style.display = "flex";
+  localStorage.basketfull = true;
+  //shoppingCart.style.display = "flex";
 };
 
 closeButton.onclick = function () {
