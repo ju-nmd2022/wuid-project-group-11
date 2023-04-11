@@ -6,7 +6,7 @@ shoppingCart.style.display = "none";
 
 addToShoppingCartButton.onclick = function () {
   localStorage.basketfull = true;
-  //shoppingCart.style.display = "flex";
+  shoppingCart.style.display = "flex";
 };
 
 closeButton.onclick = function () {
