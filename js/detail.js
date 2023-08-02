@@ -1,14 +1,17 @@
 const shoppingCart = document.getElementById("extraShoppingCart");
-const addToShoppingCartButton = document.getElementById("button");
-const closeButton = document.getElementById("close");
+const close = document.getElementById("close");
 
 shoppingCart.style.display = "none";
 
+<<<<<<< HEAD
 addToShoppingCartButton.onclick = function () {
   localStorage.basketfull = true;
+=======
+button.addEventListener("click", function () {
+>>>>>>> parent of 463c193 (Touch up)
   shoppingCart.style.display = "flex";
-};
+});
 
-closeButton.onclick = function () {
+close.onclick = function () {
   shoppingCart.style.display = "none";
 };

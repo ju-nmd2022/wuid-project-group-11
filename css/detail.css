@@ -80,7 +80,7 @@ div {
 .extraShoppingCartShoe {
   width: 50%;
   object-fit: contain;
-  margin-bottom: 10%;
+  margin-bottom: 10px;
 }
 
 #checkoutButton {
