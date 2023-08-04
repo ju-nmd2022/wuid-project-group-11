@@ -1,3 +1,8 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0px;
 }
@@ -34,9 +39,36 @@ p {
   width: 295px;
 }
 
+h3{
+  text-align: center;
+  font-size: 24px;
+}
+
 .sizesImage {
   width: 295px;
   border-radius: 9%;
+}
+
+.sizes{
+  background-color: lightgrey;
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+  font-size: 24px;
+  padding: 5px 15px;
+}
+
+.sizes td{
+  padding: 1px 30px;
+  cursor: pointer;
+}
+
+.sizes td:hover{
+  background-color: rgb(163, 163, 163);
+}
+
+.sizes td.selected{
+  background-color: rgb(163, 163, 163);
 }
 
 div {
@@ -56,6 +88,7 @@ div {
 .button {
   width: 260px;
   margin: 20px;
+  cursor: pointer;
 }
 
 #extraShoppingCart {
